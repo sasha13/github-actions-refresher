@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node --version",
-    "build": "webpack --mode production"
+    "build": "webpack ./src/index.js --mode production"
   },
   "dependencies": {
     "webpack": "^5.0.0",
