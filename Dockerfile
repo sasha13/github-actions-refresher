@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # 4. Install only production dependencies (speeds up build and minimizes size)
-RUN npm run build
+RUN npm i && npm run build
 
 # 5. Copy the remaining source code files to the container
 COPY . .
