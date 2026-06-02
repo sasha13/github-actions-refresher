@@ -2,7 +2,7 @@
 FROM node:20-alpine
 
 # 2. Set the working directory inside the container
-WORKDIR /app
+WORKDIR app
 
 # 3. Copy application manifests first to leverage Docker layer caching
 COPY package*.json ./
